@@ -1,5 +1,8 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import "./App.css";
+import MainContainer from "./components/MainContainer/MainContainer";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
@@ -19,16 +22,16 @@ function App() {
       h={"100vh"}
       w={"100vw"}
     >
-      <GridItem area={"header"} bg={"dodgerblue"}>
-        Header
+      <GridItem area={"header"} border={"1px solid dodgerblue"}>
+        <Header />
       </GridItem>
       <Show above="lg">
-        <GridItem area={"sidebar"} bg={"tomato"}>
-          Sidebar
+        <GridItem area={"sidebar"} border={"1px solid tomato"}>
+          <Sidebar />
         </GridItem>
       </Show>
-      <GridItem area={"main"} bg={"pink.300"}>
-        MainContainer
+      <GridItem area={"main"} bg={"white"} border={"1px solid pink"}>
+        <MainContainer />
       </GridItem>
     </Grid>
   );
