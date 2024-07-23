@@ -1,11 +1,9 @@
 import { Box } from "@chakra-ui/react";
-import MainContainerHeader from "./MainContainerHeader";
-import MainGrid from "./MainGrid";
+import MainGrid from "./MainGrid/MainGrid";
 
 const MainContainer = () => {
   return (
     <Box boxSizing={"border-box"} margin={5} overflow={"hidden"}>
-      <MainContainerHeader />
       <MainGrid />
     </Box>
   );
