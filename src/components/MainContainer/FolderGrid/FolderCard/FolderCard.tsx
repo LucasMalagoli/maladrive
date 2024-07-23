@@ -6,7 +6,7 @@ interface Props {
   folderName: string;
 }
 
-const Folder = ({ folderName }: Props) => {
+const FolderCard = ({ folderName }: Props) => {
   const [hover, setHover] = useState(false);
 
   return (
@@ -43,9 +43,4 @@ const Folder = ({ folderName }: Props) => {
   );
 };
 
-export default Folder;
-
-/**
- * TODO: Adicionar hover deixando a pasta mais escura e
- * o ícone preenchido
- */
+export default FolderCard;

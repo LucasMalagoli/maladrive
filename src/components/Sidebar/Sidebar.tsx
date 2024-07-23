@@ -3,8 +3,7 @@ const Sidebar = () => {
 };
 
 /**
- * TODO: Tipos de visualização? Preciso planejar isso
- * mas é legal colocar algum item já só pra ter referência
+ * TODO: Colocar Placeholders até decidir o que colocar (Informações úteis sobre mim, projeto e carreira, estatísticas aleatórias/inúteis)
  *
  * TODO: pra quando a tela for muito pequena
  * gostaria de renderizar isso aqui com um ícone

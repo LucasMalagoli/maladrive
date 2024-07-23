@@ -38,7 +38,6 @@ function App() {
 }
 
 /**
- * TODO: Grid layout
  * TODO: talvez um footer?
  * TODO: Sidebar ser scrolável e se ela estiver escondida, dar o espaço pro MainContainer
  */
