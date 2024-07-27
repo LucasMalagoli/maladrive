@@ -61,14 +61,17 @@ const FileCard = ({ file }: Props) => {
           </TextMaxLength>
         </Flex>
       </CardHeader>
-      <CardBody padding={3}>
+      <CardBody maxHeight={"220px"} padding={3}>
         <Flex
-          maxHeight={"220px"}
+          boxSize={"100%"}
           alignItems={"center"}
           justifyContent={"center"}
           overflow={"hidden"}
+          borderRadius={5}
         >
-          {isImage && <Image borderRadius={5} src={file.type.url} />}
+          {isImage && (
+            <Image boxSize={"100%"} src={file.type.url} objectFit={"cover"} />
+          )}
           {!isImage && (
             <>
               <Icon
