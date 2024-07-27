@@ -18,19 +18,19 @@ function App() {
     `,
       }}
       gridTemplateRows={{ base: "70px 1fr", lg: "100px 1fr" }}
-      gridTemplateColumns={{ base: "1fr", lg: "150px 1fr" }}
+      gridTemplateColumns={{ base: "1fr", lg: "130px 1fr" }}
       h={"100vh"}
       w={"100vw"}
     >
-      <GridItem area={"header"} border={"1px solid dodgerblue"}>
+      <GridItem area={"header"}>
         <Header />
       </GridItem>
       <Show above="lg">
-        <GridItem area={"sidebar"} border={"1px solid tomato"}>
+        <GridItem area={"sidebar"}>
           <Sidebar />
         </GridItem>
       </Show>
-      <GridItem area={"main"} bg={"white"} border={"1px solid pink"}>
+      <GridItem area={"main"} bg={"white"}>
         <MainContainer />
       </GridItem>
     </Grid>

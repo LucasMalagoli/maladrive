@@ -5,7 +5,6 @@ import {
   Flex,
   Icon,
   Image,
-  Text,
 } from "@chakra-ui/react";
 import { File } from "../../../../../data/files";
 import {
@@ -15,6 +14,7 @@ import {
   BsImageFill,
 } from "react-icons/bs";
 import { useState } from "react";
+import TextMaxLength from "../../../../utils/TextMaxLength";
 
 interface Props {
   file: File;
@@ -40,7 +40,7 @@ const FileCard = ({ file }: Props) => {
       }}
     >
       <CardHeader marginBottom={0}>
-        <Flex alignItems={"center"}>
+        <Flex alignItems={"center"} gap={{ base: 3, xl: 5 }}>
           <Icon
             as={iconPair[0]}
             boxSize={4}
@@ -54,7 +54,11 @@ const FileCard = ({ file }: Props) => {
             opacity={hover ? 1 : 0}
             transition={"opacity .2s"}
           />
-          <Text marginLeft={5}>{file.name}</Text>
+          <TextMaxLength
+            maxLen={{ base: 25, md: 20, lg: 17, xl: 20, "2xl": 35 }}
+          >
+            {file.name}
+          </TextMaxLength>
         </Flex>
       </CardHeader>
       <CardBody padding={3}>
