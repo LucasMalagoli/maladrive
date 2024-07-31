@@ -1,5 +1,4 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
-import "./App.css";
 import MainContainer from "./components/MainContainer/MainContainer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";

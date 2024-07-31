@@ -1,5 +1,7 @@
+import { VStack } from "@chakra-ui/react";
+
 const Sidebar = () => {
-  return <div></div>;
+  return <VStack></VStack>;
 };
 
 /**
